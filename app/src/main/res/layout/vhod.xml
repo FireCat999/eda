@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backvhod">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/whitedance"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/skovorodabig"
+            android:layout_marginTop="-250dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="160dp"
+            android:alpha="0.4"
+            android:fontFamily="@font/nunito_sans"
+            android:text="E-mail"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/milo"
+            android:hint="deliver@mail.ru"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:background="#EAEAEA"
+            android:textColorHint="#000000"
+            android:fontFamily="@font/nunito_sans"
+            android:textSize="17dp"
+            android:layout_marginLeft="23dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="23dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/nunito_sans"
+            android:alpha="0.4"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pas"
+            android:hint="* * * * * * * *"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:background="#EAEAEA"
+            android:textColorHint="#000000"
+            android:fontFamily="@font/nunito_sans"
+            android:textSize="17dp"
+            android:layout_marginLeft="23dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="23dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:onClick="register"
+            android:layout_marginTop="30dp"
+            android:textSize="17dp"
+            android:textColor="#FA4A0C"
+            android:layout_marginLeft="23dp"
+            android:fontFamily="@font/nunito_sans"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="316dp"
+            android:layout_height="70dp"
+            android:onClick="main"
+            android:background="@drawable/obvodka"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#F6F6F9"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:fontFamily="@font/nunito_sans"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

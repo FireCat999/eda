@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA4A0C"
+    android:orientation="vertical"
+    android:onClick="back">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/chel2" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginLeft="20dp"
+            android:layout_width="157dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="430dp"
+            android:onClick="log"
+            android:background="@drawable/buttonback"
+            android:fontFamily="@font/italianno"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textSize="24sp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="157dp"
+            android:layout_height="69dp"
+            android:onClick="reg"
+            android:fontFamily="@font/italianno"
+            android:layout_marginTop="430dp"
+            android:background="@drawable/buttonback"
+            android:text="Sign Up"
+            android:layout_marginLeft="58dp"
+            android:textAllCaps="false"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="60dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/s2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="60dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/s1" />
+    </LinearLayout>
+
+</RelativeLayout>
